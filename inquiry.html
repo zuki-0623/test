@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ</title>
+    <link rel="stylesheet" href="css/inquiry.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img src="img/rogo.png" art="logo"width="88" height="48">
+                <div id="burger">
+                     <div class="icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                     </div>
+                </div>
+                <nav class="menu-nav">
+                    <ul class="menu-list">
+                        <li><a href="#">会社情報</a></li>
+                        <li><a href="#">福祉用具レンタル</a></li>
+                        <li><a href="#">特定福祉用具販売</a></li>
+                        <li><a href="#">住宅改修</a></li>
+                        <li><a href="./inquiry.html">問い合わせ</a></li>
+                     </ul>
+                </nav>
+        </div>
+    </header>
+    <main>
+        <div class="headline">
+            <p class="top-title">お問い合わせ</h1>
+                <p class="p-title">ご不明な点がございましたら、お気軽にお問い合わせください。</p>
+        </div>
+        <div class="headline">
+            <p class="top-title">入力時のご注意点</h2>
+                <p class="p-title">&emsp;ご入力時、半角のカタカナ、ギリシャ文字、単位等をご使用になりますと、ご登録内容を正しく受信できない可能性がございます。申し訳ございませんが、ご入力の際にはこのような文字をお使いにならないようお願いいたします。</p>
+        </div>
+        <form action="#" method="post">
+            <div class="form-item">
+                <p class="form-item-label">
+                    <span class="form-item-label-required">お名前</span></p>
+                        <p class="form-item-label-box">必須</p>
+                            <input type="text" class="form-item-input" placeholder="例）山田太郎">  
+            </div>
+            <div class="form-item">
+                <p class="form-item-label">
+                    <span class="form-item-label-required">電話番号</span></p>
+                        <p class="form-item-label-box">必須</p>
+                            <input type="text" class="form-item-input" placeholder="例）000-0000-0000">  
+           </div>
+           <div class="form-item">
+                <p class="form-item-label">
+                    <span class="form-item-label-required">メールアドレス</span></p>
+                        <p class="form-item-label-box">必須</p>
+                            <input type="text" class="form-item-input" placeholder="例）example@gmail.com">  
+           </div>
+           <div class="form-item">
+                <p class="form-item-label ismsg">
+                    <span class="form-item-label-required">お問い合わせ内容</span></p>
+                         <p class="form-item-label-box">必須</p>
+                             <textarea class="form-item-textarea"></textarea> 
+           </div> 
+           <input type="submit" class="form-btn" value="送信する">
+        </form>           
+    </main>
+    <footer>
+         <small>&copy;Wpikumin;0 PLAY 2022</small>
+     </footer>
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+     <script src="js/pulugin/slick.min.js"></script>
+     <script src="js/main.js"></script>
+</body>
+</html>
