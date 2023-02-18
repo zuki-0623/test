@@ -1,0 +1,345 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li {
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(254, 254, 254);
+}
+
+.header {
+    width: 100%;
+    height: 70px;
+    top: 0;
+    left: 0;
+    background-color: rgb(244, 247, 241);
+    display: block;
+    display: flex;
+    position: fixed;
+    align-items: center;
+}
+
+.header img {
+    margin-right: auto;
+    padding-left: 30px;
+}
+
+.menu-list {
+    display: flex;
+    list-style: none;
+}
+
+.menu-list li {
+    margin-left: 30px;
+    padding-right: 30px;
+}
+
+.menu-list li a {
+    color: #015633;
+    transition: color 0.4s;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.menu-list li a:hover {
+    color: #43e7a3;
+    transition: color 0.4 ease-out;
+}
+
+main {
+    margin-top: 90px;
+    z-index: 20;
+}
+
+.headline .top-title {
+    width: 90%;
+    margin-left: 40px;
+    color: #fff;
+    background: #eaca8a;
+    font-size: 30px;
+    border-left: 25px solid #ffb522;
+    border-bottom: 3px solid #ffb522;
+}
+
+.p-title {
+    padding: 10px 30px;
+    font-size: 25px;
+}
+
+.form-item {
+    width: 100%;
+    padding: 24px 0px 24px 20px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.form-item-label {
+    width: 100%;
+    max-width: 200px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.form-item-label.ismsg {
+    margin-top: 8px;
+    margin-bottom: auto;
+}
+
+.form-item-label-required {
+    width: 200px;
+    padding-top: 8px;
+    color: black;
+    font-size: 20px;
+}
+
+.form-item-label-box {
+    width: 48px;
+    margin: 0px 10px 0px;
+    padding: 8px;
+    color: #fff;
+    background: #0804ea;
+    font-size: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+.form-item-input {
+    width: 100%;
+    height: 40px;
+    max-width: 410px;
+    margin-left: 40px;
+    font-size: 18px;
+    background: #eaedf2;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    flex: 1;
+}
+
+.form-item-textarea {
+    width: 100%;
+    height: 226px;
+    max-width: 410px;
+    margin-left: 40px;
+    font-size: 18px;
+    background: #eaedf2;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    flex: 1;
+}
+
+.form-btn {
+    width: 280px;
+    margin: auto;
+    padding: 20px 0px 20px 0px;
+    font-size: 25px;
+    color: #fff;
+    background: #7b79f0;
+    letter-spacing: 3px;
+    border-radius: 6px;
+    display: block;
+}
+
+footer {
+    height: 60px;
+    padding-top: 20px;
+    background-color: rgb(238, 241, 207);
+    text-align: center;
+}
+
+footer small {
+    font-size: 0.9rem;
+    color: rgb(14, 13, 13);
+    line-height: 50px;
+}
+
+@media screen and (max-width:768px) {
+    .menu-nav {
+        width: 50%;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #62d3ea;
+        position: fixed;
+        z-index: 3;
+    }
+
+    .menu-nav ul {
+        width: 100%;
+        height: auto;
+        position: absolute;
+    }
+
+    .menu-list {
+        padding: 0;
+        font-size: 25px;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .menu-nav li {
+        list-style: none;
+    }
+
+    .menu-list li a {
+        margin: 50px 20px;
+        color: #fff;
+        display: flex;
+        text-decoration: none;
+    }
+
+    .menu-nav {
+        transform: translateX(100vw);
+        transition: all .3s linear;
+    }
+
+    .menu-nav.show {
+        transform: translate(0);
+    }
+
+    #burger {
+        width: 48px;
+        height: 48px;
+        top: 32px;
+        right: 16px;
+        margin-top: -15px;
+        background-color: #43e7a3;
+        position: fixed;
+        border-radius: 5px;
+        z-index: 10;
+    }
+
+    .icon span {
+        width: 45%;
+        height: 3px;
+        right: 15px;
+        background-color: #fff;
+        display: inline-block;
+        border-radius: 2px;
+        transition: all .4s;
+        position: absolute;
+    }
+
+    .icon span:nth-of-type(1) {
+        top: 15px;
+    }
+
+    .icon span:nth-of-type(2) {
+        top: 23px;
+    }
+
+    .icon span:nth-of-type(3) {
+        top: 31px;
+    }
+
+    .icon.active span:nth-of-type(1) {
+        width: 30%;
+        top: 18px;
+        left: 18px;
+        transform: translateY(6px) rotate(-45deg);
+    }
+
+    .icon.active span:nth-of-type(2) {
+        opacity: 0;
+    }
+
+    .icon.active span:nth-of-type(3) {
+        width: 30%;
+        top: 30px;
+        left: 18px;
+        transform: translateY(-6px) rotate(45deg);
+    }
+
+    .headline .top-title {
+        margin: 0px 15px 0px 30px;
+        font-size: 30px;
+    }
+
+    .headline .p-title {
+        padding: 40px 15px 30px 40px;
+        font-size: 20px;
+    }
+
+    .form-item {
+        padding: 16px 14px 16px 14px;
+    }
+
+    .form-item-label {
+        width: 170px;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .form-item-label.ismsg {
+        margin-top: 0;
+    }
+
+    .form-item-label-required {
+        width: 200px;
+        padding: 4px 0px 4px 0px;
+        font-size: 18px;
+    }
+
+    .form-item-input {
+        height: 40px;
+        margin-left: 0;
+        margin-top: 18px;
+        font-size: 15px;
+    }
+
+    .form-item-textarea {
+        width: 55%;
+        height: 200px;
+        margin: 18px 0px 0px 10px;
+        font-size: 15px;
+        flex: inherit;
+    }
+
+    .form-btn {
+        width: 250px;
+        margin-top: 24px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .menu-list {
+        font-size: 20px;
+    }
+
+    .headline .top-title {
+        width: 80%;
+    }
+
+    .form-item {
+        width: 80%;
+        margin: auto;
+        flex-flow: column;
+        display: block;
+    }
+
+    .form-item-label {
+        width: inherit;
+        letter-spacing: -1px;
+    }
+
+    .form-item-textarea {
+        width: 270px;
+        margin-left: 0px;
+    }
+}
